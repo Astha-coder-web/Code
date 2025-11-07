@@ -1,0 +1,464 @@
+@import "tailwindcss";
+
+/* .parent-container {
+  padding: 0 1%;
+  overflow: hidden;
+  box-sizing: border-box;
+} */
+
+html,
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+}
+.carousel-parent {
+  position: relative;
+}
+.navbar {
+  position: absolute;
+  /* top: 0; */
+}
+
+.room-slider {
+  /* margin-bottom: 1.659%; */
+  /* width: 100%; */
+  margin-bottom: 1rem;
+}
+
+#room-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid #a5a5a5;
+  border-radius: 5px;
+  background: #fff;
+  color: white;
+  position: relative;
+  margin: 0 11px;
+
+  /* min-width: 320px;
+  max-width: 320px; */
+
+  /* box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;*/
+}
+
+#room-card .card-data {
+  padding: 20px;
+}
+
+/* #room-card .img-container {
+  width:70%;
+  overflow: hidden;
+} */
+
+/* #room-card .img-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 82.5%;
+  background-color: rgba(0, 0, 0, 0.5);
+} */
+
+.offer-room-card {
+  margin: 10px;
+  border-radius: 6px;
+}
+
+#offer-room-card .card-data {
+  position: absolute;
+  bottom: 20px;
+  color: white;
+  padding: 1%;
+  text-align: center;
+  min-width: 6%;
+}
+
+.slick-slider .slick-initialized,
+.slick-list {
+  width: 100%;
+}
+
+#room-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+
+#room-card .card-data p {
+  margin: 12px 0;
+  font-size: 1rem;
+  color: #333;
+  text-align: center;
+}
+
+#room-card .card-data button {
+  margin-top: auto;
+  padding: 10px 24px;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#room-card .card-data button:hover {
+  background: #1e40af;
+}
+
+.offer-card-image {
+  position: relative;
+  /* margin: 0 10px; */
+  filter: brightness(0.8);
+  border-radius: 6px;
+}
+.offer-card-about-data {
+  position: absolute;
+  bottom: 20px;
+  text-align: center;
+  color: white;
+}
+.slider-card {
+  position: relative;
+}
+/* #about-us div {
+  padding: 0;
+} */
+#dining-section {
+  display: flex;
+  justify-content: center;
+}
+
+/* .slick-track.slick-slide img {
+  width: 45px;
+} */
+
+.conatiner-dining {
+  /* display: block; */
+  background-image: url(https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3338/q_30/lords-hotels-resorts/Lords_lobby);
+  background-position: fixed;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#appreciation {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  padding: 3.45%;
+  margin: 5% 20%;
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.877);
+  border-radius: 6px;
+}
+
+.slider-card .book-now-ClickButton {
+  text-align: center;
+}
+
+.upcoming-event-card {
+  display: flex;
+  justify-content: center;
+}
+.upcoming-event-card-image {
+  filter: none;
+}
+.upcoming-event-card-data {
+  backdrop-filter: blur(10px);
+  padding: 10px !important;
+  /* width: 100%; */
+}
+/* .slick-slider .slick-initialized, .slick-list{
+  width: 100%;
+} */
+
+.about-head {
+  padding: 3.256% 6.511% 0;
+}
+
+.about-Data {
+  margin: 3.256% 6.511%;
+}
+
+.about-head div p {
+  margin-bottom: 3%;
+}
+
+.container {
+  margin: 2%;
+  padding: 2%;
+}
+.col-md-6 {
+  overflow: hidden;
+}
+/* .slick-slider .slick-initialized, .slick-list{
+  width: 100%;
+} */
+
+.slider-card .book-now-ClickButton {
+  margin: 50px;
+}
+
+.carousel-container .d-block {
+  width: 100%;
+  height: 100vh;
+}
+/* .slick-prev,
+.slick-next {
+  z-index: 10;
+  display: block !important; /* Force visibility 
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black; /* Make them visible 
+  font-size: 24px;
+}
+
+.slider-container {
+  position: relative;
+  padding: 0 40px; /* Add space for arrows 
+} */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+  background: #fff;
+  border-radius: 50%;
+  padding: 10px;
+  display: block !important;
+  opacity: 1 !important;
+  font-size: 24px;
+  color: #000;
+}
+.slick-prev {
+  left: 10px;
+}
+.slick-next {
+  right: 10px;
+}
+/* .dining-right-part .d-block {
+  width: 50%;
+  /* height: 50%; 
+  overflow: hidden;
+} */
+.slick-prev:before,
+.slick-next:before {
+  font-size: 40px !important;
+  opacity: 1.2;
+}
+.slick-prev {
+  left: 20px !important;
+}
+.slick-next {
+  right: 50px !important;
+}
+.container1 {
+  padding: 5.73%;
+  margin: 3.256% 0;
+}
+.container img {
+  height: 100%;
+}
+.dining-right-part {
+  box-shadow: 28px 28px 0 rgba(218, 223, 241, 0.4);
+  padding-right: 0;
+}
+
+.link {
+  display: block !important;
+}
+.hotel-head {
+  padding: 0 5.73% 0 12px !important;
+  margin-bottom: 1.659%;
+}
+
+.hotel-Data {
+  padding-top: 1.659% !important ;
+  margin-bottom: 1.659%;
+  width: 100%;
+}
+
+#hotelId {
+  padding: 0 5.73%;
+}
+
+.feedback-card {
+  padding: 10px;
+  margin-bottom: 1rem;
+}
+
+.feedback-content {
+  margin: 3rem;
+  padding: 1rem;
+  top: 50px;
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+.hotel-highlights {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.facilities span {
+  padding-right: 1rem;
+
+  & i {
+    padding-right: 4px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .checkout {
+    width: 115px;
+  }
+  .promoc {
+    width: 144px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .icon-card {
+    width: 150px;
+    height: 135px;
+    margin: 6px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  .icon-card {
+    width: 140px;
+  }
+  .detail-form div {
+    padding: 3px;
+  }
+  .location-select {
+    width: 140px;
+  }
+  .carousel-container .d-block,
+  .carousel-container {
+    width: auto !important;
+    height: 63vh !important;
+  }
+  #appreciation {
+    margin: 5% 10%;
+  }
+  footer {
+    margin: 0 !important;
+    flex-direction: column;
+    align-items: baseline;
+    /* margin: 0; */
+  }
+
+  footer p {
+    margin: 0;
+  }
+  .dining-right-part {
+    box-shadow: 18px 6px 0 #4213189c;
+  }
+
+  .feedbacks h2 {
+    padding-left: 1rem;
+  }
+
+  /* hotel booking page */
+}
+/* 🌑 Global Dark Mode Base */
+.dark {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+  transition: background-color 0.3s ease, color 0.3s ease; /* smooth toggle */
+}
+
+/* ✅ Sections */
+.dark #about-us,
+.dark .landing-page {
+  background-color: #252525;
+  color: #ffffff;
+}
+
+/* ✅ Navbar, forms, marquee, appreciation */
+.dark .navbar,
+.dark .form,
+.dark #appreciation,
+.dark marquee {
+  background-color: rgba(37, 37, 37, 0.65);
+  color: #ffffff;
+  backdrop-filter: blur(6px); /* subtle glassy effect */
+}
+
+/* ✅ Detail form */
+.dark .detail-form {
+  color: #eaeaea;
+}
+
+/* ✅ Icons, offers, footer */
+.dark #icon-section,
+.dark #offerId,
+.dark footer {
+  background-color: rgba(69, 69, 69, 0.72);
+  color: #fafafa;
+}
+
+/* ✅ Cards / Blocks */
+.dark .icon-card,
+.dark .p-4 {
+  background-color: #3a3a3a; /* darker tone for cards */
+  color: #ffffff;
+  border-radius: 8px; /* consistent look */
+  transition: background-color 0.3s ease;
+}
+
+.dark .icon-card:hover,
+.dark .p-4:hover {
+  background-color: #4a4a4a; /* hover effect */
+}
+
+/* ✅ Parent container */
+.dark .parent-container {
+  color: #f0f0f0;
+}
+.dark .hotel-cards {
+  background: rgba(69, 69, 69, 0.72);
+
+  & p {
+    color: white;
+  }
+}
+.dark .dining-right-part {
+  box-shadow: 28px 28px 0 rgba(69, 69, 69, 0.4);
+}
+
+.dark .foot-head {
+  color: white;
+}
+.dark .detail-form div input, 
+.dark .detail-form div select
+/* .dark .detail-form div .checkInTime label,
+.dark .detail-form div .checkOutTime label */ {
+  color: white !important;
+}
+.dark .form p {
+  color: #fff;
+}

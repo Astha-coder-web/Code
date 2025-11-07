@@ -1,0 +1,148 @@
+/* Container holding the profile section */
+
+.profile{
+    width: 100%;
+    height: 100%;
+}
+
+.profile-upper-section {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile .section{
+    margin-top: 190px;
+    margin-bottom: 50px;
+}
+
+.profile-data{
+    display: flex;
+    padding: 7px;
+
+    & label{
+        padding-right: 5px;
+    }
+}
+/* Avatar image */
+.profile-image{
+  position: relative;
+}
+.profile-image p {
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  top: 45%;
+  color: white;
+  display: none;
+  font-size: 1.3rem;
+
+}
+.profile-image:hover{
+  p{
+
+    display: block;
+  }
+  img{
+
+    filter: brightness(50%);
+  }
+}
+.profile-image img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #007bff;
+  background-color: #f0f0f0;
+  /* position: absolute; */
+}
+
+
+
+/* Container for user info */
+.user.profile-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  min-width: 200px;
+}
+
+.user.profile-details label {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 2px;
+  font-size: 14px;
+}
+
+.user.profile-details span {
+  font-size: 16px;
+  /* color: #555; */
+  margin-bottom: 10px;
+  display: block;
+}
+
+.booked-hotels{
+  padding: 10px;
+  margin: 10px;
+
+}
+.booking-room-header{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 20px;
+}
+
+.booking-room-header img{
+  width: 250px;
+}
+
+.booking-rooms{
+  margin: 15px;
+  padding: 15px;
+  border: #555;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 8px 20px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 12px;
+  
+}
+.room-detail{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 10px;
+
+}
+
+
+/* Responsive tweak */
+@media (max-width: 768px) {
+  .profile-upper-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .user.profile-details {
+    align-items: center;
+  }
+
+  .user.profile-details label {
+    display: block;
+  }
+
+  .user.profile-details span {
+    display: block;
+  }
+}
